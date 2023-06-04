@@ -11,6 +11,7 @@ const initialState = {
 export const tweetSlice = createSlice({
     name: 'users',
     initialState,
+   
     extraReducers: {
         [fetchTweets.pending](state) {
             state.isLoading = true;
