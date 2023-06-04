@@ -53,15 +53,14 @@
     top: 178px;
     width: 80px;
     height: 80px;
-    z-index: 100;
   }
   
   .avatar {
     position: absolute;
     width: 58px;
     height: 58px;
-    left: 160px;
-    top: 190px;
+    left: 161px;
+    top: 185px;
     border-radius: 50%;
   }
   .box {
@@ -104,10 +103,9 @@ color: #EBD8FF;
   }
   
   .button:hover {
-    background: #aeffd9;
+    opacity: 0.7;
   }
   
   .button:active {
-    background: #5cd3a8;
-    cursor: pointer;
+    opacity: 0.7;
   }

@@ -1,5 +1,5 @@
 
-import { TweetCard } from "./TweetCard/TweetCard";
+import { TweetsGallery } from "./TweetsGallery/TweetsGallery"; 
 
 
 export const App = () => {
@@ -14,7 +14,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <TweetCard/>
+      <TweetsGallery/>
     </div>
   );
 };
