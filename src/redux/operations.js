@@ -7,7 +7,7 @@ axios.defaults.baseURL = 'https://647c8650c0bae2880ad0cfd3.mockapi.io';
 
 export const fetchTweets = createAsyncThunk('users/fetchTweets', async(page, thunkAPI) => {
     try {
-        const response = await axios.get(`/users/?completed=false&page=${page}&limit=6`);
+        const response = await axios.get(`/users/?completed=false&page=${page}&limit=3`);
         return response.data;
         
     } catch (error) {
