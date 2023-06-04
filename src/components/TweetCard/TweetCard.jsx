@@ -1,11 +1,9 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { selectFollowing } from 'redux/selectors';
+import { useDispatch } from 'react-redux';
 import { updateFollow, unUpdateFollow } from 'redux/operations';
 import css from './TweetCard.module.css';
 import Logo from '../../images/Logo.png';
 import Picture2 from '../../images/Picture2.png';
 import Boy from '../../images/Boy.png';
-import { useState } from 'react';
 
 
 export const TweetCard = ({ tweet: { id, user, tweets, followers, avatar, follow} }) => {

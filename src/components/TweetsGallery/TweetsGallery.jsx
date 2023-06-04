@@ -1,9 +1,8 @@
-import { selectUser, selectIsLoading } from "redux/selectors";
+import { selectUser } from "redux/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTweets } from "redux/operations";
 import { useEffect, useState } from "react";
 import { TweetCard } from "components/TweetCard/TweetCard";
-import { tweetReducer } from "redux/slice";
 import css from './TweetsGallery.module.css'
 
 
@@ -11,14 +10,20 @@ import css from './TweetsGallery.module.css'
 export const TweetsGallery = () => {
     const dispatch = useDispatch();
     const tweets = useSelector(selectUser);
-    const isFetching = useSelector(selectIsLoading);
     const [page, setPage] = useState(1);
+   
+   
     useEffect(() => {
         dispatch(fetchTweets(page))
     }, [dispatch, page]);
 
+    const handleMore =() => {
+        setPage(page +1);
+    }
+
 return (
-    <ul className={css.list}>
+    <div className={css.box}>
+        <ul className={css.list}>
         {tweets.map((tweet) => (
             
             <li key={tweet.id}>
@@ -26,5 +31,9 @@ return (
             </li>
         ))}
     </ul>
+   {tweets.length < 12 && (
+     <button onClick={handleMore} type="button" className={css.button}>Load more</button>
+   )}
+    </div>
 )
 }
