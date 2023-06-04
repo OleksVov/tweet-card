@@ -1,0 +1,113 @@
+.cardBox {
+    position: relative;
+    width: 380px;
+    height: 460px;
+    background: linear-gradient(
+      114.99deg,
+      #471ca9 -0.99%,
+      #5736a3 54.28%,
+      #4b2a99 78.99%
+    );
+    box-shadow:  -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+  
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+  .cardBox:hover {
+    transform: scale(1.01);
+  }
+  
+  .logo {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 0.3;
+  }
+  
+  .picture {
+    position: absolute;
+    width: 308px;
+    height: 168px;
+    top:28px;
+    left: 36px;
+  }
+  
+  .rectangle {
+    position: absolute;
+    width: 380px;
+    height: 8px;
+    left: 0px;
+    top: 214px;
+  
+    background: #EBD8FF;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
+  }
+  
+  
+  .elipse {
+    position: absolute;
+    left: 150px;
+    top: 178px;
+    width: 80px;
+    height: 80px;
+    z-index: 100;
+  }
+  
+  .avatar {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 160px;
+    top: 190px;
+    border-radius: 50%;
+  }
+  .box {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+        top: 288px;
+
+  }
+  .text {
+padding-bottom: 16px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+color: #EBD8FF;
+  }
+  
+  .button {
+    width: 196px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 14px 28px;
+  font-family: 'MontserratBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #373737;
+  background:#5CD3A8 ;
+  border: none;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.3108px;
+  cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #aeffd9;
+  }
+  
+  .button:active {
+    background: #5cd3a8;
+    cursor: pointer;
+  }
