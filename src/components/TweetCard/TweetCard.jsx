@@ -16,7 +16,7 @@ export const TweetCard = ({id, user, tweets, followers, avatar }) => {
       <div className={css.rectangle}></div>
 
       <img className={css.elipse} src={Boy} alt='boy' />
-      <img className={css.avatar} src={Boy} alt={user} />
+      <img className={css.avatar} src={avatar} alt={user} />
    
      <div className={css.box} >
      <p className={css.text}>{tweets} tweets</p>
