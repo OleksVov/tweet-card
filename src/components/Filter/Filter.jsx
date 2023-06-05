@@ -14,8 +14,9 @@ export const Filter = () => {
     }
 
     return (
-       <div>
-        <p> Chouse cards</p>
+       <div className={css.boxFilter}>
+        <p className={css.text}> Select cards</p>
+         <div className={css.boxButton}>
          <button 
          selected={filter === statusFilter.all}
          onClick={() => handleFilter(statusFilter.all)} 
@@ -33,6 +34,7 @@ export const Filter = () => {
          onClick={() => handleFilter(statusFilter.following)} 
          type="button" 
          className={css.button}>Following</button>
+         </div>
        </div>
     );
 };

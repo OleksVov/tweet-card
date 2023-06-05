@@ -21,3 +21,25 @@
       opacity: 0.8;
     }
 }
+.boxFilter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxButton {
+    display: flex;
+   gap: 20px;
+}
+
+.text {
+margin-bottom: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+color: #5736A3;
+}
