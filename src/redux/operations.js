@@ -34,7 +34,6 @@ export const unUpdateFollow = createAsyncThunk('users/updateFollow', async({id, 
             followers: followers-1,
             follow: follow,
         });
-        console.log(response.data);
         return response.data;
     } catch (error) {
         return thunkAPI.rejectWithValue(error.message);

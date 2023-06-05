@@ -11,7 +11,11 @@ const initialState = {
 export const tweetSlice = createSlice({
     name: 'users',
     initialState,
-   
+   reducers: {
+clearOnMount(state) {
+    state.items.length = 0;
+}
+   },
     extraReducers: {
         [fetchTweets.pending](state) {
             state.isLoading = true;
@@ -59,3 +63,5 @@ export const tweetSlice = createSlice({
 });
 
 export const tweetReducer = tweetSlice.reducer;
+
+export const {clearOnMount} = tweetSlice.actions;

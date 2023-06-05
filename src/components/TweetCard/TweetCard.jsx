@@ -40,7 +40,7 @@ unUpdateFollow ({id, follow: !follow, followers: followers})
    
      <div className={css.box} >
      <p className={css.text}>{tweets} tweets</p>
-     <p className={css.text}>{`${changeNumber(followers)} followers`}</p>
+     <p className={css.text}>{changeNumber(followers)} followers</p>
     
      { follow ? 
      (<button onClick={() => {handleUnFollow(id, follow, followers)}} type="button" className={css.button}>Following</button>) : (
