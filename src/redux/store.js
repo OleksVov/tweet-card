@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { tweetReducer } from "./slice";
-import { filterReducer } from "./filterSlice";
+import { filterReducer } from "./filter/filterSlice";
 
 
 export const store = configureStore({
