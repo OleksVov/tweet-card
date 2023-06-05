@@ -21,6 +21,13 @@ updateFollow ({id, follow: !follow, followers: followers})
 unUpdateFollow ({id, follow: !follow, followers: followers})
         )
       };
+
+      function changeNumber(number) {
+        const numberWithComma = String(number).split(""); 
+        numberWithComma.splice(-3, 0, ",");
+       return numberWithComma.join("");
+      }
+
     return (
                 <div className={css.cardBox}>
       <img src={Logo} alt="logo" className={css.logo} />
@@ -33,7 +40,7 @@ unUpdateFollow ({id, follow: !follow, followers: followers})
    
      <div className={css.box} >
      <p className={css.text}>{tweets} tweets</p>
-     <p className={css.text}>{followers} followers</p>
+     <p className={css.text}>{`${changeNumber(followers)} followers`}</p>
     
      { follow ? 
      (<button onClick={() => {handleUnFollow(id, follow, followers)}} type="button" className={css.button}>Following</button>) : (
